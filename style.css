@@ -1,0 +1,259 @@
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: fantasy;
+  
+}
+
+
+/**************** Styling Header **************/
+.header{
+  background-color: rgb(106, 77, 38);
+  color: burlywood;
+  height: 10%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title{
+  margin: 0;
+  padding-top: 5px;
+  margin-top: 8px;
+  font-weight: bolder;
+  justify-content: center;
+  text-align: center;
+  font-size: 36px;
+}
+
+/**************** Styling Main **************/
+
+.main{
+  height: 100%;
+  width: 100%;
+  background-image: url('./img/main.jpeg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap:15px;
+}
+
+.box1{
+  width: 85%;
+  height: 50%;
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 6%;
+  border: 2px solid  rgb(106, 77, 38);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px rgb(106, 77, 38);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-size: 100% 100%; /* Ensure the background covers the entire div */
+  background-position: center; 
+  border-radius: 25px;
+}
+
+.box1 h2{
+  margin: 0;
+  color:  rgb(106, 77, 38);
+  font-weight: bolder;
+  font-size: 34px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+#ingredientForm{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#ingredientInput{
+  width: 65%;
+  height: 75%;
+  border-radius: 10px;
+  background-color: rgb(243, 232, 219);
+  font-size: 22px;
+  font-family: fantasy;
+  color: rgb(106, 77, 38);
+}
+#ingredientInput::placeholder{
+  color: rgb(106, 77, 38);
+  font-size: 22px;
+}
+
+#addButton{
+  width: 25%;
+  height: 80%;
+  border-radius: 10px;
+  font-family:'Arial Narrow';
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: rgb(243, 232, 219);
+  color : rgb(106, 77, 38);
+}
+
+#addButton:hover{
+  background-color: rgb(106, 77, 38);
+  color: rgb(243, 232, 219);
+}
+
+#getRecipe{
+  width: 50%;
+  height: 12%;
+  border-radius: 10px;
+  font-family:'Arial Narrow';
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: rgb(106, 77, 38);
+  color: rgb(243, 232, 219);
+  text-align: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+#getRecipe:hover{
+  background-color: rgb(243, 232, 219);
+  color : rgb(106, 77, 38);
+}
+
+ul{
+  width: 90%;
+  height: 50%;
+}
+#list li{
+  font-size: 24px;
+  color: rgb(106, 77, 38);
+}
+
+.box2 {
+  /* transform: rotate(-45deg); */
+  /* position:absolute; */
+  margin-bottom: 10px;
+  width: 85%;
+  height: 50%;
+  margin: 0;
+  /* margin-top: 20px; */
+  margin-left: 6%;
+  border: 2px solid  rgb(106, 77, 38);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px 5px rgb(106, 77, 38);
+  /* background-color: rgb(106, 77, 38); */
+
+}
+
+#hide{
+  display: none;
+  flex-direction: column;
+
+}
+
+
+#hide h2{
+  flex :0.1;
+  margin:1px;
+  margin-top: 10px;
+  color:  rgb(106, 77, 38);
+  font-weight: bolder;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: underline;
+  height: 10%;
+}
+#rules{
+  margin:2px;
+  margin-top: 2px;
+  padding-left:2px;
+  text-align: left;
+  font-size: 20px;
+  justify-content: center;
+  color : rgb(106, 77, 38);
+  height: 17vh;
+  overflow-y: auto;
+  font-family: 'Arial Narrow Bold';
+  
+}
+
+#LTitle{
+  margin:4px;
+  margin-top: 6px;
+  padding-left:10px;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  justify-content: center;
+  color : rgb(106, 77, 38);
+  font-family: 'Arial Narrow Bold';
+  overflow-x: auto;
+}
+
+#Link{
+  padding-left:5px;
+  padding-bottom: 3px;
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: left;
+  justify-content: center;
+  color : rgb(106, 77, 38);
+  overflow-x: auto;
+}
+#resultForm{
+  margin: 0;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20%;
+}
+
+#resultInput{
+  width: 60%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: rgb(243, 232, 219);
+  font-size: 22px;
+  font-family: fantasy;
+  color: rgb(106, 77, 38);
+}
+#resultInput::placeholder{
+  color: rgb(106, 77, 38);
+  font-size: 22px;
+}
+
+#resultButton{
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  font-family:'Arial Narrow';
+  font-weight: bolder;
+  font-size: 24px;
+  background-color: rgb(106, 77, 38);
+  color: rgb(243, 232, 219);
+  text-align: center;
+  justify-content: center;
+}
+
+#resultButton:hover{
+  background-color: rgb(243, 232, 219);
+  color : rgb(106, 77, 38);
+}
+
+
+
+
+  
